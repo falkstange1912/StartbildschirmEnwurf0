@@ -27,8 +27,8 @@ const CONFIG = {
   primaryCtaText: "Funktionen testen",
   secondaryCtaText: "Direkt-Kontakt",
   
-  // Falls du hier später ein echtes Bild eintragen willst, z.B. "/Bild.jpg"
-  imageUrl: "" 
+  // Pfad zeigt jetzt direkt auf das Bild im neuen public-Ordner
+  imageUrl: "/Bild.jpg" 
 };
 
 export default function App() {
@@ -167,7 +167,7 @@ export default function App() {
                 <ChevronRight className="w-3 h-3 text-neutral-300" />
               </div>
 
-              {/* Strikte Bild-Regel gegen Darstellungsfehler ("?") */}
+              {/* Bild-Bereich */}
               <div className="relative rounded-xl overflow-hidden shadow-xs border border-neutral-200 aspect-[4/3] bg-neutral-50 flex items-center justify-center">
                 {CONFIG.imageUrl ? (
                   <img src={CONFIG.imageUrl} alt="Rümpelgrün Projekt" className="w-full h-full object-cover" />
